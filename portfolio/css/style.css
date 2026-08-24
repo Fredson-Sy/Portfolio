@@ -1,0 +1,156 @@
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+  max-width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  position: relative;
+
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: #3a55ef;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+/* HERO */
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  text-align: center;
+}
+/* SECTIONS */
+.section {
+  /* ... */
+}
+
+.section-title {
+  /* ... */
+}
+
+
+/* SOBRE */
+.about-text {
+  /* ... */
+}
+
+
+/* PROJETOS */
+.projects-grid {
+  /* ... */
+}
+
+.project-card {
+  /* ... */
+}
+
+.project-image {
+  /* ... */
+}
+
+.project-info {
+  /* ... */
+}
+
+.tech-tags {
+  /* ... */
+}
+
+.project-links {
+  /* ... */
+}
+
+
+
+/* SKILLS */
+.skills-list {
+  /* ... */
+}
+
+.skill {
+  /* ... */
+}
+
+
+/* CONTATO */
+.contact-links {
+  /* ... */
+}
+
+form {
+  /* ... */
+}
+
+
+/* FOOTER */
+.footer {
+  /* ... */
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  /* ... */
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Fredson, estudante de Engenharia da Computação na UFPA e desenvolvedor front-end.">
+  <title>Fredson • Desenvolvedor</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carouselanimations.css">
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <nav class="navbar">
+      <a href="/" class="logo">Fredson.dev</a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-logo">
+          <img src="img/logo-hero.png" alt="Logo Fredson Sydney">
+        </div>
+        <div class="hero-text">
+          <h1>Olá, eu sou <span>Fredson</span></h1>
+
+          <h2 class="hero-role">Desenvolvedor Frontend
+            <span id="typing-text"></span><span class="cursor">|</span>
+          </h2>
+
+          <p>Sou estudante de Engenharia da Computação na UFPA, sou desenvolvedor frontend. Nesta página, você pode conhecer um pouco sobre meu trabalho e experiência.</p>
+        
+        </div>  
+          <div class="hero-buttons">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="#" class="btn btn-secondary" download>Baixar currículo</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre mim</h2>
+        <p class="about-text">
+          Sou estudante de Engenharia da Computação na Universidade Federal do Pará, e sou mais focado em desenvolvimento web.
+          Gosto de entender cada detalhe do que estou construindo, buscando sempre aprender novas tecnologias e aprimorar minhas habilidades.
+          Trabalhei em projetos acadêmicos e pessoais, desenvolvendo aplicações web responsivas e interativas.
+          Trabalho tanto em projetos individuais quanto colaborativos usando Git/GitHub.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2 class="section-title">Projetos</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img/img-projects/screenshot-agrosat.png" alt="AgroSat Brasil">
+            </div>
+            <div class="project-info">
+              <h3>AgroSat Brasil</h3>
+              <p>Plataforma de monitoramento agrícola via satélite, com autenticação Firebase e diretório de marketplace com links externos.</p>
+              <div class="tech-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Firebase</span>
+              </div>
+              <div class="project-links">
+                <a href="https://juniorcruzrs.github.io/AgroSat/" target="_blank" rel="noopener noreferrer">Ver projeto ↗</a>
+                <span class="project-note">Repositório privado — projeto ainda em desenvolvimento</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img/img-projects/screenshot-xpstudy.png" alt="XPStudy">
+            </div>
+            <div class="project-info">
+              <h3>XPStudy</h3>
+              <p>Aplicativo web para acompanhamento e gamificação de estudos. Permite aos usuários registrar sessões de estudo, visualizar o progresso com gráficos dinâmicos e armazenar dados usando o LocalStorage.</p>
+              <div class="tech-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://fredson-sy.github.io/XPStudy/" target="_blank" rel="noopener noreferrer">Ver projeto ↗</a>
+                <a href="https://github.com/Fredson-Sy/XPStudy" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img/img-projects/screenshot-gerador-de-senhas.png" alt="Gerador de Senhas">
+            </div>
+            <div class="project-info">
+              <h3>Gerador de Senhas</h3>
+              <p>Um gerador de senhas aleatórias simples, construído com JavaScript puro. Gera uma senha de 8 caracteres combinando números, letras minúsculas, maiúsculas e caracteres especiais.</p>
+              <div class="tech-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://fredson-sy.github.io/gerador-de-senhas/" target="_blank" rel="noopener noreferrer">Ver projeto ↗</a>
+                <a href="https://github.com/Fredson-Sy/gerador-de-senhas" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="img/img-projects/screenshot-appex.png" alt="Apex">
+            </div>
+            <div class="project-info">
+              <h3>Apex</h3>
+              <p>Uma landing page criada para lançar e distribuir meus próprios aplicativos para desktop. Inclui um fluxo de download protegido por senha que valida os dados em uma API de backend ativa.</p>
+              <div class="tech-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://fredson-sy.github.io/Appex/" target="_blank" rel="noopener noreferrer">Ver projeto ↗</a>
+                <a href="https://github.com/Fredson-Sy/Appex" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="carouselanimations">
+          <div class="icons">
+            <div class="icon"><img src="img/icons8-html.svg" alt="HTML5"></div>
+            <div class="icon"><img src="img/icons8-css.svg" alt="CSS3"></div>
+            <div class="icon"><img src="img/icons8-javascript.svg" alt="JavaScript"></div>
+            <div class="icon"><img src="img/icons8-firebase.svg" alt="Firebase"></div>
+            <div class="icon"><img src="img/icons8-git.svg" alt="Git"></div>
+            <!-- <div class="icon"><img src="img/icons8-react-native.svg" alt="React Native"></div>
+            <div class="icon"><img src="img/icons8-nodejs.svg" alt="Node.js"></div>
+            <div class="icon"><img src="img/icons8-python.svg" alt="Python"></div> -->
+          </div>
+
+          <!-- Segundo grupo idêntico: necessário para o loop infinito do @keyframes scroll (translateX -50%) -->
+          <div class="icons" aria-hidden="true">
+            <div class="icon"><img src="img/icons8-html.svg" alt=""></div>
+            <div class="icon"><img src="img/icons8-css.svg" alt=""></div>
+            <div class="icon"><img src="img/icons8-javascript.svg" alt=""></div>
+            <div class="icon"><img src="img/icons8-firebase.svg" alt=""></div>
+            <div class="icon"><img src="img/icons8-git.svg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="skills-list">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Firebase</span>
+          <span class="skill">Git &amp; GitHub</span>
+          <span class="skill">React</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">Python</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <p>Vamos conversar? Me encontre por aqui:</p>
+        <div class="contact-links">
+          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/linkedin.png" alt="LinkedIn"></a>
+          <a href="#" target="_blank" rel="noopener noreferrer">GitHub <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/github.png" alt="GitHub"></a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Instagram <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/instagram-new.png" alt="Instagram"></a>
+        </div>
+
+        <form action="#" method="post">
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome" required>
+
+          <br><br>
+
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" required>
+
+          <br><br>
+
+          <label for="assunto">Assunto:</label><br>
+          <input type="text" id="assunto" name="assunto" required>
+
+          <br><br>
+
+          <label for="mensagem">Mensagem:</label><br>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+          <br><br>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Fredson.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
