@@ -124,7 +124,7 @@ container {
 }
 
 section-title::before {
-  content: "//";
+  content: '//';
   color: var(--mint);
   font-weight: 700;
 }
