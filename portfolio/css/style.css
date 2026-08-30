@@ -1,3 +1,4 @@
+/*=====Header=====*/
 header {
   position: sticky;
   top: 0;
@@ -47,6 +48,7 @@ header.scrolled {
   color: var(--mint);
 }
 
+/*Nav for header*/
 .nav-links {
   display: flex;
   gap: 2.25rem;
@@ -91,7 +93,7 @@ header.scrolled {
   transform-origin: left;
 }
 
-/*Hero*/
+/*=====Hero=====*/
 .hero {
   min-height: 90vh;
   display: flex;
@@ -101,7 +103,6 @@ header.scrolled {
 }
 
 /*Ambient glow drifting behind the hero copy*/
-
 .hero::before {
   content: '';
   position: absolute;
@@ -206,7 +207,7 @@ header.scrolled {
   font-size: 0.95rem;
   opacity: 0%;
   transform: translateY(24px);
-  animation: fadeInUp var(--slow) var(--ease) 0.5 forwads;
+  animation: fadeInUp var(--slow) var(--ease) 0.5 forwards;
 }
 
 .hero-buttons {
@@ -214,7 +215,70 @@ header.scrolled {
   display: flex;
   gap: 2rem;
   flex-wrap:  wrap;
-  opacity: 0;
+  /*opacity: 0;*/
   transform: translateY(25px);
-  animation fadeInUp var(--slow) var(--ease) 0.7 forwards;
+  animation: fadeInUp var(--slow) var(--ease) 0.7 forwards;
+}
+
+/*=====Buttons=====*/
+.btn {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.9rem 1.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform var(--fast),  box-shadow var(--fast), background var(--fast), border-color var(--fast), color var(--fast);
+}
+
+/*Animation and designer for buttons of hero*/
+.btn-primary {
+  background: var(--mint);
+  color: #06110c;
+}
+
+.brn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px -8px var(--mint-soft) 0 0 0 1px var(--mint);
+}
+
+.brn-primary:active {
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--border);
+  color: var(--color);
+}
+
+.btn-secondary:hover {
+  border-color: var(--border);
+  color: var(--text);
+}
+
+/*=====Sobre=====*/
+.about-text {
+  max-width: 68ch;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.90;
+  border-left: 2px solid var(--text-muted);
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp var(--slow) forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 25%;
+}
+
+/*Fallback for browsers without animation-timeline suport*/
+@supports not (animation-timeline: view()) {
+  .about-text {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
 }
