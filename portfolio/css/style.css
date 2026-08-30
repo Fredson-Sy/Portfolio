@@ -344,3 +344,53 @@ header.scrolled {
   line-height: 1.65;
   margin-bottom: 1.1rem;
 }
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.tech-tags span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--indigo);
+  background: var(--indigo-soft);
+  border: 1px solid #6c7cff40;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  transition: transform var(--fast), background var(--fast);
+}
+
+.tech-tags span:fover {
+  transform: translateY(2px);
+  background: #6c7cffcc;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.project-links a {
+  color: var(--mint);
+  font-weight: 600;
+  position: relative;
+  transition: transform var(--fast);
+  display: inline-block; 
+}
+
+.project-links:hover {
+  transform: translateX(3px);
+  color: var(--text); 
+}
+
+.project-note {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  font-style: italic;
+}
