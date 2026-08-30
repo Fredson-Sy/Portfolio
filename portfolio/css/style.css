@@ -1,4 +1,4 @@
-/*=====Header=====*/
+/*===== Header =====*/
 header {
   position: sticky;
   top: 0;
@@ -93,7 +93,7 @@ header.scrolled {
   transform-origin: left;
 }
 
-/*=====Hero=====*/
+/*===== Hero =====*/
 .hero {
   min-height: 90vh;
   display: flex;
@@ -220,7 +220,7 @@ header.scrolled {
   animation: fadeInUp var(--slow) var(--ease) 0.7 forwards;
 }
 
-/*=====Buttons=====*/
+/*===== Buttons =====*/
 .btn {
   font-family: var(--font-mono);
   font-weight: 600;
