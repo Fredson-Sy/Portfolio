@@ -6,7 +6,7 @@ header {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
-  transition: border-color(var--fast), background var(--fast);
+  transition: border-color var(--fast), background var(--fast);
 }
 
 header.scrolled {
@@ -20,18 +20,16 @@ header.scrolled {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.15 rem 0;
+  padding: 1.15rem 0;
 }
 
-
-/*Logo do header*/
 .logo {
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 1.05rem;
   letter-spacing: -0.01em;
   color: var(--text);
-  position: relarive;
+  position: relative;
   transition: color var(--fast);
 }
 
@@ -49,8 +47,46 @@ header.scrolled {
   color: var(--mint);
 }
 
-/*nav-links do header*/
 .nav-links {
   display: flex;
   gap: 2.25rem;
+}
+
+.nav-links a {
+  position: relative;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  padding-bottom: 4px;
+  transition: color var(--fast);
+}
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: var(--gradient-accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--med);
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+.nav-links a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-links a.active {
+  color: var(--mint);
+}
+
+.nav-links a.active::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
